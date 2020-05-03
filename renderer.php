@@ -1123,7 +1123,7 @@ EOT;
 
         if ($hasquestionincategory) {
             $params = [
-                    'class' => 'btn btn-primary form-submit',
+                    'class' => 'btn btn-primary form-submit mr-1 mb-1',
                     'type' => 'submit',
                     'name' => 'startquiz',
                     'value' => get_string('start_quiz_button', 'studentquiz')
@@ -1138,13 +1138,13 @@ EOT;
 
         if ($caneditall) {
             $output .= html_writer::empty_tag('input', [
-                    'class' => 'btn',
+                    'class' => 'btn btn-secondary mr-1 mb-1',
                     'type' => 'submit',
                     'name' => 'approveselected',
                     'value' => get_string('state_toggle', 'studentquiz')
             ]);
             $output .= html_writer::empty_tag('input', [
-                    'class' => 'btn',
+                    'class' => 'btn btn-secondary mr-1 mb-1',
                     'type' => 'submit',
                     'name' => 'deleteselected',
                     'value' => get_string('delete')
@@ -1153,7 +1153,7 @@ EOT;
 
         if ($canmoveall) {
             $output .= html_writer::empty_tag('input', [
-                    'class' => 'btn',
+                    'class' => 'btn btn-secondary mr-1 mb-1',
                     'type' => 'submit',
                     'name' => 'move',
                     'value' => get_string('moveto', 'question')

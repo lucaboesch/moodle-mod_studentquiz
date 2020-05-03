@@ -527,7 +527,7 @@ class studentquiz_bank_view extends \core_question\bank\view {
                     $this->studentquiz->closesubmissionfrom, 'submission');
 
             $questionsubmissionbutton->disabled = !$questionsubmissionallow;
-            $output .= \html_writer::div($OUTPUT->render($questionsubmissionbutton) . $qtypecontainer, 'createnewquestion');
+            $output .= \html_writer::div($OUTPUT->render($questionsubmissionbutton) . $qtypecontainer, 'createnewquestion mb-1');
 
             if (!empty($message)) {
                 $output .= $this->renderer->render_availability_message($message, 'mod_studentquiz_submission_info');
