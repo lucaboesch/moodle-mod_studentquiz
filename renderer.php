@@ -1222,7 +1222,7 @@ EOT;
             'returnurl' => $this->page->url]);
         if ($hasquestionincategory) {
             $params = [
-                'class' => 'btn btn-primary form-submit',
+                'class' => 'btn btn-primary form-submit mr-1 mb-1',
                 'type' => 'submit',
                 'name' => 'startquiz',
                 'formmethod' => 'get',
@@ -1255,7 +1255,7 @@ EOT;
                 ]);
             }
             $output .= html_writer::empty_tag('input', [
-                'class' => 'btn btn-secondary',
+                'class' => 'btn btn-secondary mr-1 mb-1',
                 'type' => 'submit',
                 'name' => 'deleteselected',
                 'formaction' => $deleteurl,
