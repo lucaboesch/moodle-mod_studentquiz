@@ -49,6 +49,9 @@ class studentquiz_question {
     protected $id;
 
 
+    /** @var int $studentquizquestionid - The StudentQuiz question id. */
+    private $studentquizquestionid;
+
     /**
      * studentquiz_question constructor.
      *
