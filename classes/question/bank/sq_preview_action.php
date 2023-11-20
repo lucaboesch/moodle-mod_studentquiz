@@ -20,6 +20,14 @@ if (!class_exists('\qbank_previewquestion\preview_action')) {
     class_alias('\qbank_previewquestion\preview_action_column', '\qbank_previewquestion\preview_action');
 }
 
+defined('MOODLE_INTERNAL') || die();
+
+if (file_exists($CFG->dirroot.'/mod/quiz/classes/question/bank/preview_action_column.php')) {
+    require_once($CFG->dirroot.'/mod/quiz/classes/question/bank/preview_action_column.php');
+}
+
+use qbank_previewquestion\preview_action_column;
+
 /**
  * A action type for preview link to mod_studentquiz_preview
  *
